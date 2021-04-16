@@ -1,7 +1,7 @@
 const express = require('express')
 const { graphqlHTTP } = require('express-graphql')
 const { buildSchema } = require('graphql')
-const WindyAPI = require('./windy')
+const WindyAPI = require('@tsamantanis/node-windy-api')
 require('dotenv').config()
 
 

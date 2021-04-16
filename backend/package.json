@@ -16,7 +16,7 @@
   "author": "Philippos Tsamantanis",
   "license": "ISC",
   "dependencies": {
-    "@tsamantanis/node-windy-api": "^1.0.1",
+    "@tsamantanis/node-windy-api": "^1.0.2",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
