@@ -2,6 +2,7 @@ const express = require('express')
 const { graphqlHTTP } = require('express-graphql')
 const { buildSchema } = require('graphql')
 const WindyAPI = require('@tsamantanis/node-windy-api')
+const cors = require('cors')
 require('dotenv').config()
 
 
@@ -64,7 +65,9 @@ const root = {
     }
 }
 
+// app setup
 const app = express()
+app.use(cors())
 
 // Define a route for GraphQL
 app.use('/graphql', graphqlHTTP({
