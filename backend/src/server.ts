@@ -54,6 +54,8 @@ const root = {
     getHumanizedWeather: async ({ lat, lon, time, temp, wind }) => {
         const res = await WindyAPI.standard(lat, lon, process.env.WINDY_API_KEY)
         const data = await WindyAPI.beautify(res, time, temp, wind)
+        console.log(res)
+        console.log(data)
         return {
             ts: res.ts,
             humanizedTime: data.ts,
